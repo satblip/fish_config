@@ -9,6 +9,6 @@ function fish_greeting
   echo "#                                               #"
   echo "#                                               #"
   echo "#################################################"
-  ~/.config/fish/functions/fixtures/joke
+  ~/.config/fish/functions/fish_joke/joke
   echo "#################################################"
 end
