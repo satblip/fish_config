@@ -11,6 +11,7 @@ alias ll='ls -al'                         # List all files in current directory 
 alias ldir='ls -al | grep ^d'             # List all directories in current directory in long list format
 alias o='open .'                          # Open the current directory in Finder
 alias ut='uptime'                         # Computer uptime
+alias update_config='sh ~/.config/fish/scripts/updates.sh'
 
 # ----------------------
 # Git Aliases
