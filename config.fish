@@ -5,6 +5,7 @@ alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 # Aliases
 # -------
 alias clr='clear'                         # Clear your terminal screen
+alias dcp='docker-compose'                 # Docker-Compose
 alias flush='killall -HUP mDNSResponder'  # Flush DNS (Yosemite)
 alias ip='curl icanhazip.com'             # Your public IP address
 alias ll='ls -al'                         # List all files in current directory in long list format
