@@ -15,6 +15,11 @@ alias ut='uptime'                         # Computer uptime
 alias update_config='sh ~/.config/fish/scripts/updates.sh'
 
 # ----------------------
+# Git Outside of Xcode
+# ----------------------
+alias git='/usr/local/git/bin/git'
+
+# ----------------------
 # Git Aliases
 # ----------------------
 alias ga='git add'
