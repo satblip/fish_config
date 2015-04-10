@@ -1,70 +1,16 @@
-# Sublime text
-alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+# Path to your oh-my-fish.
+set fish_path $HOME/.oh-my-fish
 
-# -------
-# Aliases
-# -------
-alias clr='clear'                         # Clear your terminal screen
-alias dcp='docker-compose'                 # Docker-Compose
-alias flush='killall -HUP mDNSResponder'  # Flush DNS (Yosemite)
-alias ip='curl icanhazip.com'             # Your public IP address
-alias ll='ls -al'                         # List all files in current directory in long list format
-alias ldir='ls -al | grep ^d'             # List all directories in current directory in long list format
-alias o='open .'                          # Open the current directory in Finder
-alias ut='uptime'                         # Computer uptime
-alias update_config='sh ~/.config/fish/scripts/updates.sh'
+# Theme
+set fish_theme satblip
 
-# ----------------------
-# Git Outside of Xcode
-# ----------------------
-alias git='/usr/local/git/bin/git'
+# All built-in plugins can be found at ~/.oh-my-fish/plugins/
+# Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
+# Enable plugins by adding their name separated by a space to the line below.
+set fish_plugins theme fish_joke update_config
 
-# ----------------------
-# Git Aliases
-# ----------------------
-alias ga='git add'
-alias gaa='git add .'
-alias gaaa='git add -A'
-alias gb='git branch'
-alias gbd='git branch -d '
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gco='git checkout'
-alias gcob='git checkout -b'
-alias gcom='git checkout master'
-alias gd='git diff'
-alias gda='git diff HEAD'
-alias gi='git init'
-alias gl='git log'
-alias glg='git log --graph --oneline --decorate --all'
-alias gld='git log --pretty=format:"%h %ad %s" --date=short --all'
-alias gm='git merge --no-ff'
-alias gp='git pull'
-alias gss='git status -s'
-alias gst='git stash'
-alias gstl='git stash list'
-alias gstp='git stash pop'
-alias gstd='git stash drop'
+# Path to your custom folder (default path is ~/.oh-my-fish/custom)
+set fish_custom $HOME/Github/oh-my-fish-custom
 
-# Java
-set -x JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home
-
-# MongoDB
-set -x MONGODBURL localhost
-
-# Postgresql
-set PATH /Applications/Postgres.app/Contents/Versions/9.4/bin $PATH
-
-# Docker
-set -x DOCKER_HOST tcp://192.168.59.103:2376
-set -x DOCKER_CERT_PATH /Users/louisborsu/.boot2docker/certs/boot2docker-vm
-set -x DOCKER_TLS_VERIFY 1
-
-# Node Env
-set -x NODE_ENV development
-
-# Brew path
-set default_path /usr/bin /usr/sbin /bin /sbin
-set homebrew /usr/local/bin /usr/local/sbin
-set brew_rbenv "/usr/local/var/rbenv/shims"
-set -gx PATH $homebrew $brew_rbenv $default_path
+# Load oh-my-fish configuration.
+. $fish_path/oh-my-fish.fish
